@@ -2,7 +2,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
   import ThemeIcon from "../lib/ThemeIcon.svelte"
-    import { Tooltip, TooltipContent, TooltipShortcut, TooltipTrigger } from "@ui-sdk/svelte";
 
   let dark = $state(false)
 

@@ -1,7 +1,6 @@
 @import 'tailwindcss';
-@import '../../../packages/ui/src/theme.css';
+@import './theme.css';
 @plugin '@tailwindcss/typography';
-@source '../../../packages/ui/src/';
 
 @custom-variant dark {
     &:where(.dark, .dark *, [data-color-scheme="dark"], [data-color-scheme="dark"] *) {
