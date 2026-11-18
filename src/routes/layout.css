@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@import '../../../packages/ui/src/theme.css';
+@plugin '@tailwindcss/typography';
+@source '../../../packages/ui/src/';
+
+@custom-variant dark {
+    &:where(.dark, .dark *, [data-color-scheme="dark"], [data-color-scheme="dark"] *) {
+        @slot;
+    }
+    @media (prefers-color-scheme: dark) {
+        &:where([data-color-scheme="system"], [data-color-scheme="system"] *) {
+            @slot;
+        }
+    }
+}
+
+
+*,
+*::before,
+*::after {
+    cursor: default !important;
+}
